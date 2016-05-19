@@ -1,0 +1,16 @@
+{
+  "name": "superchelbot",
+  "version": "0.0.0",
+  "private": true,
+
+  "author": "trulytyler git config --global user.email “tylerharrisdesign@gmail.com <YOUR@EMAIL.com>",
+
+  "description": "he's super chill and goes by steve for short",
+
+  "dependencies": {
+  },
+
+  "engines": {
+    "node": "0.10.x"
+  }
+}
