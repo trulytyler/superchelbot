@@ -2,9 +2,12 @@ module.exports = function(robot) {
     robot.hear(/chel/, function(res) {
        return res.send("http://i.imgur.com/1ZbCPqz.jpg");
      });
-    robot.respond(/is it a (weekend|holiday)\s?\?/i, function(msg){
-        var today = new Date();
-        msg.reply(today.getDay() === 0 || today.getDay() === 6 ? "YES" : "NO");
-    });
+    robot.respond(/practice/i, function(res){
+     var spells = ["*felo'mena'SHA!*", "*felo'mena'SHAW!*", "_felo... mena... SHA!_", "*malore!*", "_felomenashaaa!_"];
+     return res.send(res.random(spells));
+	});
 };
-//test
+
+
+
+
