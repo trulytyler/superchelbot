@@ -1,6 +1,15 @@
+//working below
+// module.exports = function(robot) {
+//     robot.hear(/chel/, function(res) {
+//        return res.send("http://i.imgur.com/1ZbCPqz.jpg");
+//      });
+// };
 module.exports = function(robot) {
-   robot.respond(/practice/, function(res){
-     var spells = ["*felo'mena'SHA!*", "*felo'mena'SHAW!*", "_felo... mena... SHA!_", "*malore!*", "_felomenashaaa!_"];
+    robot.hear(/chel/, function(res) {
+       res.send("http://i.imgur.com/1ZbCPqz.jpg");
+     });
+robot.respond(/i am so/, function(res){
+     var spells = ["*cool brah*", "*the chelest dawh around*", "The fanciest brah"];
      return res.send(res.random(spells));
 	});
 };
