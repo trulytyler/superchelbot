@@ -1,5 +1,5 @@
 module.exports = function(robot) {
-    robot.hear(/chel/, function(res) {
-       return res.send("http://i.imgur.com/1ZbCPqz.jpg");
+    robot.hear(/Hello!/, function(res) {
+       return res.send("Hi there!");
      });
 };
